@@ -1,19 +1,8 @@
-$noise-bg: image-url('noise.png') top left !default;
-$img-border: inline-image('dotted-border.png');
-
-// Main Link Colors
-$link-color: lighten(#165b94, 3) !default;
-$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
-$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
-$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
-
 // Main Section Colors
 $main-bg: #f8f8f8 !default;
-$page-bg: #252525 !default;
+$page-bg: #000 !default;
 $article-border: #eeeeee !default;
 
-$header-bg: #333 !default;
-$header-border: lighten($header-bg, 15) !default;
 $title-color: #f2f2f2 !default;
 $subtitle-color: #aaa !default;
 
@@ -21,66 +10,179 @@ $text-color: #222 !default;
 $text-color-light: #aaa !default;
 $type-border: #ddd !default;
 
+// Main Link Colors
+$link-color: darken(#fdb930, 10%) !default;
+$link-color-hover: #fdb930 !default;
+
 /* Navigation */
 $nav-bg: #ccc !default;
-$nav-bg-front: image-url('noise.png') !default;
-$nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11)) !default;
 $nav-color: darken($nav-bg, 38) !default;
 $nav-color-hover: darken($nav-color, 25) !default;
 $nav-placeholder: desaturate(darken($nav-bg, 10), 15) !default;
-$nav-border: darken($nav-bg, 10) !default;
-$nav-border-top: lighten($nav-bg, 15) !default;
-$nav-border-bottom: darken($nav-bg, 25) !default;
-$nav-border-left: darken($nav-bg, 11) !default;
-$nav-border-right: lighten($nav-bg, 7) !default;
 
 /* Sidebar colors */
 $sidebar-bg: #f2f2f2 !default;
 $sidebar-link-color: $link-color !default;
 $sidebar-link-color-hover: $link-color-hover !default;
-$sidebar-link-color-active: $link-color-active !default;
-$sidebar-color: change-color(mix($text-color, $sidebar-bg, 80), $hue: hue($sidebar-bg), $saturation: saturation($sidebar-bg)/2) !default;
-$sidebar-border: desaturate(darken($sidebar-bg, 7), 10) !default;
-$sidebar-border-hover: darken($sidebar-bg, 7) !default;
-$sidebar-link-color-subdued: lighten($sidebar-color, 20) !default;
-$sidebar-link-color-subdued-hover: $sidebar-link-color-hover !default;
-$twitter-status-link: lighten($sidebar-link-color-subdued, 15) !default;
 
-$footer-color: #888 !default;
-$footer-bg: #ccc !default;
-$footer-bg-front: image-url('noise.png') !default;
-$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11)) !default;
-$footer-color: darken($footer-bg, 38) !default;
-$footer-color-hover: darken($footer-color, 10) !default;
-$footer-border-top: lighten($footer-bg, 15) !default;
-$footer-border-bottom: darken($footer-bg, 15) !default;
-$footer-link-color: darken($footer-bg, 38) !default;
-$footer-link-color-hover: darken($footer-color, 25) !default;
-$page-border-bottom: darken($footer-bg, 5) !default;
+/* Footer colors */
+$footer-color: #999;
+$footer-bg: rgba(25, 25, 25, 0.95);
+$footer-link-color: #ccc;
+$footer-link-color-hover: #fff;
+
+
+.f-left {
+  clear: none;
+  float: left;
+  &.img {
+    margin: 0 1em 0 0;
+  }
+}
+
+.f-right {
+  clear: none;
+  float: right;
+  &.img {
+    margin: 0 0 0 1em;
+  }
+}
 
 
 /* Core theme application */
 
 a {
-  @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
-}
-aside.sidebar a {
-  @include link-colors($sidebar-link-color, $hover: $sidebar-link-color-hover, $focus: $sidebar-link-color-hover, $active: $sidebar-link-color-active);
-}
-a {
-  @include transition(color .3s);
+  text-decoration: none;
+  color: $link-color;
+  @include transition(all .25s);
+  &:hover {
+    text-decoration: none;
+    color: $link-color-hover;
+  }
 }
 
-html {
-  background: $page-bg image-url('line-tile.png') top left;
-}
 body {
-  > div {
-    background: $sidebar-bg $noise-bg;
-    border-bottom: 1px solid $page-border-bottom;
-    > div {
-      background: $main-bg $noise-bg;
-      border-right: 1px solid $sidebar-border;
-    }
+  cursor: default;
+  background: $page-bg image-url("mainLogoBack.jpg") center 20px no-repeat;
+}
+
+#content {
+  background: #fff;
+}
+
+section {
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1em;
+  &:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
   }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.return-link {
+  color: #fff;
+  background: #ccc;
+  border-bottom: 1px solid #bbb;
+  display: block;
+  margin: -4em -2em 4em;
+  padding: 2px 2em 0;
+  line-height: 25px;
+  text-align: right;
+  &:hover {
+    color: #fff;
+    background: $link-color-hover;
+    border-color: $link-color;
+  }
+}
+
+h1, .page-title {
+  text-transform: uppercase;
+  border-bottom: 3px solid $text-color;
+}
+
+.intro {
+  font-size: 18px;
+  line-height: 1.3em;
+  padding: 1em 0 2em;
+  font-weight: lighter;
+}
+
+.btn {
+  -webkit-appearance: none;
+  color: #fff;
+  border: 1px solid #aaa;
+  @include border-radius(5px);
+  background-color: #aaa;
+  padding: .5em 1.25em .75em;
+  @include box-shadow(0 1px rgba(255,255,255,0.25) inset);
+  @include transition(all .15s);
+  &:hover {
+    cursor: pointer;
+    background-color: $link-color-hover;
+    border-color: $link-color-hover;
+  }
+}
+
+.filetype {
+  display: inline-block;
+  padding: 5px 5px 8px;
+  font-size: 10px;
+  line-height: 10px;
+  color: #fff;
+  background: #bbb;
+  @include border-radius(3px);
+  &:hover {
+    color: #fff;
+    background-color: $link-color-hover;
+  }
+}
+
+
+form {
+
+  label {
+    @extend .heading;
+    display: block;
+    line-height: 30px;
+  }
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    border: 1px solid #CCC;
+    @include border-radius(3px);
+    @include box-shadow(inset 0 2px 3px rgba(0,0,0,0.1));
+    background: #fff;
+    display: block;
+    height: 30px;
+    width: 100%;
+    padding: 2px 5px;
+    box-sizing: border-box;
+  }
+  textarea {
+    height: 100px;
+  }
+
+}
+
+
+table {
+
+  background: #fff;
+
+  &, tbody, tr {
+    width: 100%;
+  }
+
+  td, th {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+  }
+  th {
+    background: #f6f6f6;
+  }
+
 }

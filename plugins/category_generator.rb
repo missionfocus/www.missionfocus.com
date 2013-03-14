@@ -150,9 +150,9 @@ module Jekyll
       when 0
         ""
       when 1
-        categories[0].to_s
+        "<span class='categories ss-tag'>#{categories[0].to_s}</span>"
       else
-        "#{categories[0...-1].join(', ')}, #{categories[-1]}"
+        "<span class='categories ss-tag'>#{categories[0...-1].join(', ')}, #{categories[-1]}</span>"
       end
     end
 

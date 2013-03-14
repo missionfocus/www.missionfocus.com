@@ -1,19 +1,39 @@
-body > footer {
-  @extend .sans;
-  font-size: .8em;
+.site-footer {
+  text-align: center;
   color: $footer-color;
-  text-shadow: lighten($footer-bg, 5) 0 1px;
   background-color: $footer-bg;
-  @include background($footer-bg-front, $footer-bg-back);
-  border-top: 1px solid $footer-border-top;
-  position: relative;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  margin-bottom: 3em;
-  @include border-bottom-radius(.4em);
-  z-index: 1;
+  @include box-shadow(0 1px rgba(255,255,255,0.1) inset);
   a {
     @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
   }
+  .footer-subtitle {
+    color: #fff;
+    font-size: 18px;
+    @media only screen and (max-width: 720px) {
+      font-size: 14px;
+    }
+    @extend .heading;
+    margin: 10px 0;
+  }
+
+  .navigation {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding-right: 1em;
+    }
+  }
+
+  @media only screen and (min-width: 720px) {
+    .navigation {
+      float: left;
+      text-align: left;
+    }
+    .copyright {
+      float: right;
+      text-align: right;
+    }
+  }
+
   p:last-child { margin-bottom: 0; }
 }

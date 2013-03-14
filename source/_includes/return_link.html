@@ -1,0 +1,12 @@
+{% if post %}
+  {% assign link = post.return_link[0] %}
+  {% assign label = post.return_link[1] %}
+{% elsif page %}
+  {% assign link = page.return_link[0] %}
+  {% assign label = page.return_link[1] %}
+{% else %}
+  {% assign link = "/" %}
+  {% assign label = "Fixme" %}
+{% endif %}
+
+<a class="return-link ss-navigateup" href="{{ link }}">{{ label }}</a>
