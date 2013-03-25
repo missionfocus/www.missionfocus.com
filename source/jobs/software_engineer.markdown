@@ -1,7 +1,7 @@
 ---
 layout: job
 ---
-# Mission Focus & The Institute for Modern Intelligence
+# Mission Focus & The Institute for Modern Intelligence 
 ## Hiring professional Software Engineers in Alexandria, VA    
 
 ### We:
@@ -29,10 +29,11 @@ layout: job
 
 ### Desirable Experience:
 * Lisp, Clojure, Compojure
+* CSS, Javascript, Ember
+* User interface design, information visualization
 * Unix / Linux and shell scripting
 * Source control and continuous integration technologies
 * NoSQL compute and storage technologies
-* Web development, user interface design, information visualization
 * Natural language / image / motion imagery processing
 * Semiotics, knowledge representation, data modeling, semantic technologies
 * Advanced mathematics, statistical inference, artificial intelligence
