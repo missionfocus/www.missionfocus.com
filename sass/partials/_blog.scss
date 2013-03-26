@@ -75,9 +75,25 @@
     }
   }
 
-  .subscription {
-    font-size: .8em;
+  .social-links {
     margin-bottom: 2em;
+    p {
+      margin: 0 0 5px;
+    }
+    a {
+      display: block;
+      height: 18px;
+      line-height: 18px;
+      &:before {
+        width: 24px;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+    .icon-appnet {
+      padding-left: 20px;
+      background: url(../images/icon-appnet.png) 0 2px no-repeat;
+    }
   }
 
   .pagination {
