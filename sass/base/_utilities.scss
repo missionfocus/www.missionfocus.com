@@ -20,9 +20,18 @@
   }
 }
 
+@mixin at2x($image_name, $extention: '.png', $w: auto, $h: auto) {
+  background-image: image_url($image_name + $extention);
+  $x2img : $image_name + '@2x' + $extention;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: image_url($x2img);
+    background-size: $w $h;
+  }  
+}
+
 @function text-color($color, $dark: dark, $light: light){
   $text-color: ( (red($color)*299) + (green($color)*587) + (blue($color)*114) ) / 1000;
   $text-color: if($text-color >= 150, $dark, $light);
   @return $text-color;
 }
-

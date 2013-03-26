@@ -10,12 +10,6 @@
   </header>
   <div class="container">
     <div id="content">
-      <nav role="navigation">
-        <ul class="navigation">
-          <li><a href="{{ root_url }}/about-us">About Us</a></li>
-          <li><a href="{{ root_url }}/contact">Contact</a></li>
-        </ul>
-      </nav>
       {{ content | expand_urls: root_url }}
     </div>
   </div>

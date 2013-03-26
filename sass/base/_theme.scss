@@ -63,7 +63,10 @@ a {
 
 body {
   cursor: default;
-  background: $page-bg image-url("mainLogoBack.jpg") center 20px no-repeat;
+  background-color: $page-bg;
+  @include at2x("mainLogoBack", ".jpg", 1145px, 394px);
+  background-position: center 20px;
+  background-repeat: no-repeat;
 }
 
 #content {
