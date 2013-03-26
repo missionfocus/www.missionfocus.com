@@ -36,4 +36,39 @@ body#home {
     padding-top: 0;
   }
 
+  .intro-file {
+    text-align: center;
+    .filetype {
+      background: $link-color;
+    }
+    &:hover .filetype {
+      background: $link-color-hover;
+    }
+  }
+
+  .home-where, .home-latest-post {
+    float: left;
+    width: 48%;
+    h2 {
+      font-size: 1.1em;
+      line-height: 1.25em;
+      margin-bottom: 5px;
+      color: $text-color;
+      &:hover {
+        color: $link-color-hover;
+      }
+    }
+  }
+  .home-where {
+    .thumbnail {
+      border: 1px solid #ddd;
+      height: 78px;
+    }
+  }
+  .home-latest-post {
+    margin-left: 4%;
+    .entry-title {
+      font-size: 175%;
+    }
+  }
 }

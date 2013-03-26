@@ -111,7 +111,7 @@ h1, .page-title {
 
 .intro {
   font-size: 18px;
-  line-height: 1.3em;
+  line-height: 1.35em;
   padding: 1em 0 2em;
   font-weight: lighter;
 }
@@ -150,6 +150,7 @@ h1, .page-title {
 
 .filetype {
   display: inline-block;
+  vertical-align: middle;
   padding: 5px 5px 8px;
   font-size: 10px;
   line-height: 10px;
@@ -162,6 +163,22 @@ h1, .page-title {
   }
 }
 
+.thumbnail {
+  @include border-radius(5px);
+}
+
+.alert {
+  display: block;
+  margin: 40px 0;
+  padding: 10px;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  @include border-radius(5px);
+  text-align: center;
+  strong {
+    color: $text-color;
+  }
+}
 
 form {
 
