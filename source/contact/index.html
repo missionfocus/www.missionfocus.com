@@ -8,24 +8,26 @@ return_link: [/, Return]
 <h1 class="page-title">Contact Mission Focus</h1>
 
 
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='http://missionfoc.us';}"></iframe>
 
 <section>
-
   <p class="intro">For more information regarding our services, please fill out the below contact form.</p>
 
-  <form method="post" action="contact">
+  <form action="https://docs.google.com/spreadsheet/formResponse?formkey=1jiAfPdTiUE6xzniCT1yHHg1Z8MSq1hSAieoQjLIe3h0&amp;embedded=true" method="POST" target="hidden_iframe" onsubmit="submitted=true;" id="contactForm">
     <p>
-      <label for="email">Email:</label>
-      <input name="email" id="email" type="text">
+      <label for="entry_0">Email:</label>
+      <input name="entry.0.single" id="entry_0" type="text">
     </p>
     <p>
-      <label for="subject">Subject:</label>
-      <input name="subject" id="subject" type="text">
+      <label for="entry_1">Subject:</label>
+      <input name="entry.1.single" id="entry_1" type="text">
     </p>
     <p>
-      <label for="message">Message:</label>
-      <textarea name="message" id="message" rows="15" cols="40"></textarea>
+      <label for="entry_2">Message:</label>
+      <textarea name="entry.2.single" id="entry_2" rows="15" cols="40"></textarea>
     </p>
+    <input name="entry.3.single" type="hidden" value="MF" />
     <input type="submit" class="btn">
   </form>
 

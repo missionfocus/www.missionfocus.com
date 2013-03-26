@@ -33,9 +33,6 @@
 
   article {
     .meta {
-      text-transform: uppercase;
-      color: #aaa;
-      font-size: 11px;
       padding: 0 0 10px 0;
       margin: 0;
     }
@@ -45,17 +42,6 @@
     }
     .categories {
       padding-left: .5em;
-    }
-  }
-
-  .read-more {
-    color: $text-color;
-    font-size: .9em;
-    &:before {
-      font-size: .8em;
-    }
-    &:hover {
-      color: $link-color-hover;
     }
   }
 
@@ -148,4 +134,20 @@
 
   }
 
+}
+.meta {
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 11px;
+}
+
+.read-more {
+  color: $text-color;
+  font-size: .9em;
+  &:before {
+    font-size: .8em;
+  }
+  &:hover {
+    color: $link-color-hover;
+  }
 }
