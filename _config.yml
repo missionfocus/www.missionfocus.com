@@ -7,7 +7,7 @@ title: Mission Focus
 subtitle: "Make It Happen, Move It Forward"
 author: Andy Eick
 simple_search: http://google.com/search
-description:
+description: "Head in the clouds, feet in the dirt"
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -33,7 +33,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: maruku
+markdown: kramdown
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index

@@ -5,14 +5,24 @@ return_link: [/, Return]
 ---
 
 <h1 class="page-title">About Mission Focus</h1>
-
+<section>
+  <h2>Our Mission</h2>
+  <p>MissionFocus is an agile development shop that takes domain design and development as seriously as system design and development. We work mostly in the Intelligence arena with DoD and IC customers in close partnership with the <a href="http://imintel.org">Institute for Modern Intelligence</a>. Our core domain is the storage, processing, and utilization of data in the context of immense scale and diversity. We are experts in cloud compute and storage technology and invented the Sign Representation Framework which underpins a game-changing approach to data unification. We pride ourselves on our disciplined engineering practices and distinguish ourselves by our ability to continually learn and innovate. The work we do is meaningful and intentional and is wrapped with our integrity. We are driven to think harder and work better than the rest because we believe the code we are writing will change the world!</p>
+</section>
 <section>
   <h2>Our Office</h2>
   <p class="meta">
     <a href="http://goo.gl/maps/ZI7o7" target="_new">
-      <img class="thumbnail" src="http://maps.googleapis.com/maps/api/staticmap?center=Alexandria,+VA&amp;zoom=12&amp;size=660x220&amp;maptype=roadmap&amp;markers=color:orange%7Clabel:none%Alexandria,+VA&amp;sensor=false" width="100%">
+
+{% comment %}
+ Note on using google maps below.  Am using the (static image generator)[http://gmaps-samples.googlecode.com/svn/trunk/simplewizard/makestaticmap.html]
+ Size of the thumbnail below is 660x220
+ Make sure you specify sensor=false as the last param, and HTML encode the string
+{% endcomment %}
+
+      <img class="thumbnail" src="http://maps.google.com/maps/api/staticmap?markers=100+Daingerfield, Suite 400, Alexandria, VA 22314|100+Daingerfield, Suite 400, Alexandria, VA 22314 &size=660x220&sensor=false" width="100%">
     </a>
-    100 Daingerfield, Suite 400, Alexandria, VA 22314
+    100 Daingerfield, Suite 400, Alexandria, VA 22314.  <a href="http://goo.gl/maps/mMScB">map</a>
   </p>
   <p>
     <a href="/contact" class="ss-mail">Contact Us</a>
