@@ -1,9 +1,9 @@
 {% if site.google_analytics_tracking_id %}
   <script type="text/javascript">
     var url = window.location.toString();
-     
+
     if(url.search("mf.dev") > 0){
-      console.log("on dev site");  
+      console.log("on dev site -- not tracking with analytics");  
     }
     else {
       var _gaq = _gaq || [];
