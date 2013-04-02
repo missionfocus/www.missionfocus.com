@@ -3,8 +3,7 @@ layout: post
 title: "The Data Scientist"
 date: 2010-12-09 16:24
 comments: true
-categories: 
-- Exclude
+categories:
 - Institute for Modern Intelligence
 - MissionFocus
 - articles
