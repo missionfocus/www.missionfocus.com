@@ -1,4 +1,4 @@
-AuthUserFile /srv/www/missionfocus.com/public_html/download/.htpasswd
+AuthUserFile /srv/www/missionfocus.com/public_html/files/.htpasswd
 AuthName EnterPassword
 AuthGroupFile /dev/null
 AuthType Basic
