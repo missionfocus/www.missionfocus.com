@@ -6,9 +6,10 @@ body#home {
 
     .header-bg {
       margin: 75px 0;
-      background: #000;
+      // Commented out from older version of site
+      // background: #000;
       text-align: center;
-      height: 83px;
+      height: 200px;
       position: relative;
     }
 
@@ -18,11 +19,11 @@ body#home {
         position: absolute;
         z-index: 2;
         left: 50%;
-        top: -55px;
-        width: 153px;
-        height: 197px;
-        margin-left: -79px;
-        @include at2x("logo-missionfocus", ".jpg", 153px, 197px);
+        top: -80px;
+        width: 306px;
+        height: 394px;
+        margin-left: -165px;
+        @include at2x("logo-missionfocus", ".jpg", 306px, 394px);
         background-repeat: no-repeat;
         text-indent: 100%;
         overflow: hidden;
