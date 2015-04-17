@@ -1,0 +1,30 @@
+---
+layout: default
+body_id: contact
+return_link: [/, Return]
+---
+
+
+<h1 class="page-title">Contact Mission Focus</h1>
+
+<section>
+  <p class="intro">For more information regarding our services, please fill out the below contact form.</p>
+
+  <form action="http://post.missionfocus.com/post.php" method="POST" id="contactForm">
+    <script>document.write('<input type="hidden" name="valid" value="1" />');</script>
+    <p>
+      <label for="email">Email:</label>
+      <input name="email" id="email" type="text">
+    </p>
+    <p>
+      <label for="subject">Subject:</label>
+      <input name="subject" id="subject" type="text">
+    </p>
+    <p>
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="15" cols="40"></textarea>
+    </p>
+    <input type="submit" class="btn">
+  </form>
+
+</section>

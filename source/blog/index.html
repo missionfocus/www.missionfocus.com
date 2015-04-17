@@ -1,0 +1,49 @@
+---
+layout: default
+body_id: blog
+return_link: [/, Return]
+---
+
+<div class="blog-index">
+
+  <div class="main">
+    {% assign index = true %}
+    {% for post in paginator.posts %}
+    {% assign content = post.content %}
+      <article>
+        {% include article.html %}
+      </article>
+    {% endfor %}
+    <nav class="pagination">
+      {% if paginator.next_page %}
+        <a class="prev" href="{{paginator.next_page}}" class="ss-navigateleft">&larr; Older</a>
+      {% endif %}
+      <a href="/blog/archives" class="ss-list">Blog Archives</a>
+      {% if paginator.previous_page %}
+      <a class="next" href="{{paginator.previous_page}}" class="ss-navigateright">Newer &rarr;</a>
+      {% endif %}
+    </nav>
+  </div>
+
+  <aside class="sidebar">
+    {% if site.blog_index_asides.size %}
+      {% include_array blog_index_asides %}
+    {% else %}
+      {% include_array default_asides %}
+    {% endif %}
+
+    <section class="social-links">
+      <p class="subscription" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
+        <a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS" class="ss-rss">RSS</a>
+      </p>
+      <p>
+        <a href="http://twitter.com/missionfocus" class="ss-social-twitter">@MissionFocus</a>
+      </p>
+      <p>
+        <a href="http://alpha.app.net/missionfocus" class="icon-appnet">App.Net</a>
+      </p>
+
+    </section>
+  </aside>
+
+</div>

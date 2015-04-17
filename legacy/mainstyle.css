@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color:#000;
+	background:#FFF;
+	text-align:center;
+	font-family:"Courier New", Courier, monospace;
+	margin:0;
+	padding:0;	
+}
+
+body.inside {
+	background:#000 url(images/mainLogoBack.jpg) no-repeat center top fixed;
+	text-align:center;
+	font-family:"Courier New", Courier, monospace;
+	margin:0;
+	padding:0;	
+}
+
+h2 {
+	font-size:19px;	
+}
+
+#logoBar {
+	height:394px;
+	width:100%;
+	background:url(images/blackLogoBar.jpg) repeat-x;	
+	margin-top:20px;
+}
+
+#navBar {
+	font-weight:bold;
+	font-size: 29px;
+}
+
+#navBar a {
+	color:#000;
+	text-decoration:none;
+}
+
+#navBar a:hover {
+	text-decoration:underline;
+}
+
+#descriptionBar {
+	width:100%;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	margin:20px 0 25px 0;
+	font-size:14px;
+}
+
+#descriptionBar p {
+	width:495px;	
+	margin:10px auto;
+}
+
+#taglineBar {
+	width:100%;
+	background:#000;	
+}
+
+#aboutInfo {
+	width:697px;	
+	text-align:left;
+	padding:15px;
+	background:#FFF;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-355px;
+	-webkit-box-shadow: 0px 0px 12px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 0px 12px #000; /* FF3.5 - 3.6 */
+    box-shadow: 0px 0px 12px #000;
+}
+
+#aboutHead {
+	width:697px;
+	height:102px;
+	background:url(images/aboutHeader.png) repeat-x;
+	margin-bottom:-20px;
+}
+
+h1.insideTitle {
+	width:100%;
+	border-bottom:3px solid #000;
+}
+
+a.returnLink {
+	color:#000;	
+	float:right;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a.returnLink:hover {
+	text-decoration:underline;
+}
+
+.imageright {
+	float:right;	
+	margin:0 0 8px 15px;
+}
+
+.imageleft {
+	float:left;	
+	margin:0 15px 8px 0;
+}
+
+#contactInfo {
+	width:697px;	
+	text-align:left;
+	padding:15px;
+	background:#FFF;
+	position:absolute;
+	top:0;
+	left:50%;
+	margin-left:-355px;
+	-webkit-box-shadow: 0px 0px 12px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 0px 12px #000; /* FF3.5 - 3.6 */
+    box-shadow: 0px 0px 12px #000;
+}
+
+#contactInfo form {
+	display:inline-block;
+	padding-left:180px;
+}
+
+#contactInfo form input {
+	min-width:200px;
+}
+
+
+#contactInfo p {
+	margin:4px 0;
+}
+
+#fullNav {
+	width:244px;
+	margin:0 auto;
+}
+
+ul#navList {
+	list-style:none;
+	margin:0;
+	padding:0;	
+}
+
+ul#navList li {
+	float:left;
+	margin:10px;
+}
+
+ul#navList li a { 
+	color:#000;
+	font-size:12px;
+}

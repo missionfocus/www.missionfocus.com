@@ -1,0 +1,40 @@
+.site-footer {
+  text-align: center;
+  color: $footer-color;
+  background-color: $footer-bg;
+  @include box-shadow(0 1px rgba(255,255,255,0.1) inset);
+  a {
+    @include link-colors($footer-link-color, $footer-link-color-hover, $visited: $footer-link-color);
+  }
+  .footer-subtitle {
+    color: #fff;
+    font-size: 18px;
+    @media only screen and (max-width: 720px) {
+      font-size: 14px;
+    }
+    @extend .heading;
+    margin: 10px 0;
+  }
+
+  .navigation {
+    margin-left: 0;
+    list-style-type: none;
+    li {
+      display: inline-block;
+      padding-right: .7em;
+    }
+  }
+
+  @media only screen and (min-width: 720px) {
+    .navigation {
+      float: left;
+      text-align: left;
+    }
+    .copyright {
+      float: right;
+      text-align: right;
+    }
+  }
+
+  p:last-child { margin-bottom: 0; }
+}
