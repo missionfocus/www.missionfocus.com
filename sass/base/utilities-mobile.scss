@@ -1,0 +1,6 @@
+.mobile-only {
+  display: none;
+  @include media($small-screen-below) {
+    display: block;
+  }
+}

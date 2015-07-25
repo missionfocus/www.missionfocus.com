@@ -1,0 +1,18 @@
+---
+layout: default
+style: home
+---
+<main>
+  <header>
+    <h1 class="logo">Mission Focus</h1>
+  </header>
+  <nav class="m-header scene_element scene_element--fadeinleft">
+     {% include nav/navigation-links.html %} 
+  </nav>
+  <article class="m-page scene_element scene_element--fadeinleft">
+    {{content}}
+  </article>
+</main>
+<footer>
+	{% include global/footer.html %}
+</footer>

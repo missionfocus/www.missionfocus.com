@@ -1,4 +1,7 @@
-website
-=======
+Default layout is "page" which is a two column layout
 
-Our public website
+Override default layout with "layout: three-columns" in front matter
+
+
+todo: 
+add smoothscroll

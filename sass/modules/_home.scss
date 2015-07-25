@@ -1,0 +1,85 @@
+body.home {
+	height: 100vh;
+	background-color: $home-background-color;
+	main {
+		height: 100vh;
+		header {
+			@include span-columns(12);
+			text-align: center;
+			height: rem(250);
+			background-color: $home-background-color;
+			color: #fff;
+			@include pad();
+			// margin-top: 3rem;
+			box-sizing: border-box;
+			h1 {
+				display: inline-block;
+				text-align: left;
+				font-size: 3rem;
+				padding-left: 2rem;
+				@include vertical-align();
+			}
+		}
+		nav {
+			padding-top: 5rem;
+			width: 40%;
+			height: calc(100vh - 250px); 
+			box-sizing: border-box;
+			float: left;
+			background-color: $home-background-color;
+			ul {
+				text-align: right;
+				// margin-right: 35%;
+				li a {
+					font-weight: 2rem;
+					color: #fff;
+				}
+			}
+		}
+		article {
+			width: 60%;
+			height: calc(100vh - 250px); 
+			box-sizing: border-box;
+			float: right;
+			@include pad();
+			background-color: $home-background-color;
+			img {
+				height: 50vh;
+				min-height: 250px;
+				max-width: rem(300);
+			}
+		}
+	}
+
+}
+
+
+//// add similar static component
+body.static {
+	height: 100vh;
+	background-color: $color-1;//$home-background-color;
+	text-align: center;	
+	header {
+		color: #fff;
+		max-width: 60%;
+		margin:auto;
+		h1 {			
+			font-size: 3rem;
+		}
+	}		
+	article {
+		img {
+			height: 50vh;
+			min-height: 250px;
+			margin-top: 5%;
+			margin-bottom: 2%;
+		}
+	}
+}
+
+body.white {
+		background-color: white;
+		header {
+			color: $color-1;
+		}
+	}

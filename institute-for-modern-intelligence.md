@@ -1,6 +1,6 @@
 ---
-title: Mission Focus
+title: "Institute for Modern Intelligence"
 layout: static
-note: "change layout to home for final version"
+class: white
 ---
 <img src="/static/images/mission-focus-logo.png">

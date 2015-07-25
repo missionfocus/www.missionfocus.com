@@ -1,0 +1,110 @@
+body.three-columns {
+
+	nav {
+		background-color: $nav-background-color;
+		@include media($mobile) {
+			@include span-columns(12); 
+			@include pad();
+			height: auto; 
+			width: 100%;
+		}
+		@include media($medium) {
+			height: 100vh;
+			width: rem(280);
+			position: fixed;
+			left: 0px;
+		}
+		img {
+			width: rem(105);
+			@include media($mobile) {
+				float: left;
+				margin: .5rem 0 0 0;//bp changed from 2rem auto 0
+			}
+			display: block;
+			margin: 4rem auto 0;//bp changed from 4 auto 0
+		}
+		h2.logo {
+			font-size: 2em;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-align: center;
+			margin-top: 1rem;
+			color: #fff;
+			@include media($mobile) {
+				margin-top: .5rem; //bp changed from 4 to .5
+				text-align: left; 
+				margin-left: 40%;
+			}
+		}
+		ul {
+			text-align: center;
+			@include media($mobile) {
+				text-align: center; //bp
+				margin-left: 40%;
+				min-width: 50%;
+			}
+			////margin-right: 35%; BP removed
+			li a {
+				font-weight: 2rem;
+				color: #fff;
+			}
+			li {
+				@include media($mobile) {
+					display: inline;
+				}
+			}
+		}
+	}
+
+	main {
+		@include media($mobile) {
+			padding-left: 0px;
+		}
+		padding-left: rem(280); 		
+		section.photo {
+			@include media($mobile) {
+				@include span-columns(12);
+				background: url('/static/images/office.jpg') no-repeat center center;
+				background-size: cover;
+				width: 100%;
+				height: 25vh;
+			}
+			@include media($medium) {
+				@include span-columns(12);
+				background: url('/static/images/office.jpg') no-repeat center center;
+				background-size: cover;
+				width: 100%;
+				height: 25vh;
+			}
+			@include media($large) {
+				@include span-columns(4);
+				background: url('/static/images/office.jpg') no-repeat center center;
+				background-size: cover;
+				// width: 100%;
+				height: 100vh;
+			}
+		}
+		article {
+			@include pad();
+			max-height: 100vh;
+			overflow: scroll;
+			@include media($mobile) { 
+				@include span-columns(12);
+				width: 100%;
+			}
+			@include media($medium) {
+				@include span-columns(12);
+			}
+			@include media($large) {
+				@include span-columns(8);
+			}
+		}
+		
+		h1 {
+			text-transform: uppercase;
+			//text-align: center;
+			margin-top: 4rem;
+		}
+	}
+	
+}
