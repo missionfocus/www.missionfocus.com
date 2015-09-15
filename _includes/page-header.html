@@ -1,5 +1,14 @@
-<header>
-  {% if page.title %}
+{% if page.slideshow %}
+  {% assign page_class = 'product' %}
+{% else %}
+  {% assign page_class = 'page' %}
+{% endif %}
+<header class="{{ page_class }}" style="{% if page.image %}background: url('/static/images/{{ page.image }}') no-repeat center center;background-size: cover;{% endif %}{% if page.background_height %}min-height:{{ page.background_height }};{% endif %}">  
+  {% if page.slideshow %}
+    {% include slideshow.html %}
+  {% elsif page.include %}
+    {% include {{ page.include }} %}
+  {% elsif page.title %}
     <h1>      
       {{ page.title }}      
     </h1>  

@@ -1,6 +1,7 @@
 ---
 title: "Institute for Modern Intelligence"
-layout: static
+link: "www.imintel.org"
+layout: home
 class: white
 ---
-<img src="/static/images/mission-focus-logo.png">
+<img src="/static/images/imi-logo.gif" style="height:200px;">

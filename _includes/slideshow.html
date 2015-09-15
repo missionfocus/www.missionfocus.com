@@ -1,0 +1,8 @@
+
+<div class="gallery js-flickity" data-flickity-options='{ "initialIndex": 0, "wrapAround": true, "lazyLoad": 1 }'>
+  {% for item in site.data.slideshow %}
+    <div class="gallery-cell {{ loop.index }}">
+      <img src="" data-flickity-lazyload="/static/images/{{ item.image }}" />
+    </div>
+  {% endfor %}
+</div> 

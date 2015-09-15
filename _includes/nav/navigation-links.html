@@ -1,16 +1,5 @@
-{% assign nav_items = site.data.navigation %}
-<ul id="navigation-menu" class="nav-sidebar">
-
- 
-
-<li class="nav-sidebar-item mobile-only">
-      <a href="#office">
-        Office Location
-      </a>
-    </li>
-	{% for links in nav_items %}		
-		<li id="{{links.slug}}" class="nav-sidebar-item{% if page.url contains /links.slug/  %} active{% endif %}">
-			<a href="{% if links.slug %}/{{links.slug}}/{% else %}/{% endif %}">{{ links.name }}</a>
-		</li>
-	{% endfor %}
-</ul>
+{% for links in site.data.navigation %}    
+  <li>
+    <a {% if page.url contains /links.slug/  %} class="active" {% endif %} href="{% if links.slug %}/{{links.slug}}/{% else %}/{% endif %}">{{ links.name }}</a>
+  </li>
+{% endfor %}

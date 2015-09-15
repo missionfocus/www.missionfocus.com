@@ -8,7 +8,8 @@ var gulp     = require('gulp'),
     sass     = require('gulp-sass'),
     uglify   = require('gulp-uglify'),
     neat     = require('node-neat').includePaths,
-    watch = require('gulp-watch');
+    svgmin   = require('gulp-svgmin'),
+    watch    = require('gulp-watch');
 
 var CSSDest = './static/css/', 
     JSDest = './static/js/dist/';
@@ -30,7 +31,8 @@ gulp.task("lint", function() {
     gulp.src("./static/js/*.js")
         .pipe(jshint())
         .pipe(jshint.reporter("default"));
-});
+}); 
+
 
 gulp.task('scripts', function() {
   return gulp.src( ['./static/js/*.js'])
@@ -45,19 +47,36 @@ gulp.task('scripts-concat', function() {
   return gulp.src(
       [
         './node_modules/jquery/dist/jquery.min.js',
-        './node_modules/smoothstate/jquery.smoothState.min.js',
-         './static/js/dist/scripts.min.js'
+        './node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js',
+        './node_modules/flickity/dist/flickity.pkgd.js',
+        './static/js/dist/scripts.min.js' 
       ])
     .pipe(concat('scripts-concatenated.min.js')) //change this to change the script found in 'templates/global/_scripts.html'
-    .pipe(gulp.dest(JSDest))
+    .pipe(gulp.dest(JSDest)) 
 });
 
 gulp.task('move-scripts', function(){
     return gulp.src([
         './node_modules/html5shiv/dist/html5shiv.min.js', 
-        './node_modules/respond.js/dest/respond.min.js'
+        './node_modules/respond.js/dest/respond.min.js',
         ])
     .pipe(gulp.dest(JSDest));
+});
+
+gulp.task('move-scripts-vivus', function() {
+  return gulp.src( ['./node_modules/vivus/dist/vivus.min.js'])    
+    .pipe(gulp.dest(JSDest));
+});
+
+
+gulp.task('svgmin', function () {
+    return gulp.src('./static/images-svg/*.svg')
+        .pipe(svgmin({
+            plugins: [ {
+                cleanupIDs: false
+            }]
+        }))
+        .pipe(gulp.dest('./static/images/'));
 });
 
 gulp.task('watch', function() {
@@ -68,7 +87,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default',function(){
-    gulp.start('styles', 'lint', 'scripts', 'scripts-concat', 'move-scripts');
+    gulp.start('styles', 'lint', 'scripts', 'scripts-concat', 'move-scripts', 'move-scripts-vivus');
 });
 
 
