@@ -1,18 +1,33 @@
 ---
 layout: default
-style: home
+style: home  
 ---
 <main>
-  <header>
-    <h1 class="logo">Mission Focus</h1>
-  </header>
-  <nav class="m-header scene_element scene_element--fadeinleft">
-     {% include nav/navigation-links.html %} 
-  </nav>
-  <article class="m-page scene_element scene_element--fadeinleft">
+  <div id="left"></div>
+  <div id="right"></div>  
+  <article class="logo-animation">
     {{content}}
   </article>
+  <header class="header-animation">
+    <h1 class="logo">
+      {{ page.title }}
+    </h1>
+    <small>
+      <a href="#footer">100 Daingerfield &bull; Suite 400  &bull; Alexandria, VA, 22314 <i class="icon-ion-arrow-down-a"></i></a><br />
+      <a href="http://{{ page.link }}">{{ page.link }}</a>
+    </small>
+    <nav>
+      <ul>
+       {% include nav/navigation-links.html %}
+      </ul>
+    </nav>
+  </header>
 </main>
-<footer>
-	{% include global/footer.html %}
-</footer>
+<footer id="footer">
+  {% include global/footer.html %}
+</footer> 
+<script src="/static/js/dist/vivus.min.js"></script>
+<script type="text/javascript">
+var left = new Vivus('left', {type: 'delayed', start: 'autostart', duration: 100, file: '/static/images-svg/left.svg'});
+var right = new Vivus('right', {type: 'delayed', start: 'autostart', duration: 100, file: '/static/images-svg/right.svg'});
+</script>

@@ -1,4 +1,4 @@
-url:
+url: missionfocus.com
 sitename: 'Mission Focus'
 description: 'Move it forward, make it happen'
 # do not include  https://github.com/...
@@ -19,8 +19,7 @@ bust_css_cache: true
 
 # options (data)
 google_analytics_id: UA-xxxx
-disqus_id:
-addthis_id:
+typekit_id: saz8dbz
 
 include_nav-top: true
 include_nav-side-left: true
@@ -31,7 +30,7 @@ directory_assets_img: /static/images/
 
 # options (social)
 # facebook_id:
-twitter_id: missionfocus
+twitter_id: budparr
 
 
 defaults:

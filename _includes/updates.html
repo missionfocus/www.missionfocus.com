@@ -1,0 +1,7 @@
+{% for object in site.posts %}
+  <h2>
+    <a href="{{ object.url }}">{{ object.title }}</a>
+  </h2>
+  {{ object.content }}
+  <hr class="post-divider" />
+{% endfor %}

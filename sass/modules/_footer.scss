@@ -3,12 +3,10 @@ footer {
   .address {
     width: 55%;
     float: left;
-    min-height: 35vh;
+    height: 35vh;
     background-color: #CC5C32;
     @include media($mobile) {
-      width: 100%;
-      float: none;
-      height: 10vh;
+      display: none;
     }
     ul {
       padding-left: 45%;

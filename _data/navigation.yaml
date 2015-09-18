@@ -5,7 +5,11 @@
  slug: about
 
 -
- name: Contact
+ name: Semapp
+ slug: semapp
+
+-
+ name: Contact/location
  slug: contact
 
 -

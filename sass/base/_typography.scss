@@ -28,6 +28,9 @@ h1, .h1 {
 h2 {
   font-size: $h2-font-size;
   font-weight: 600;
+  .logo a {
+    color: #fff;
+  }
 }
 
 aside h2 {
@@ -75,10 +78,10 @@ a {
   color: $base-link-color;
   text-decoration: none;
   &:hover {
-    color: $base-link-color;
+    color: darken($action-color, 10%);
   }
   &:active, &:focus {
-    color: $base-link-color;
+   color: $action-color;
     outline: none;
   }
 }
@@ -142,6 +145,9 @@ sub { top: 0.4em; }
 .inline {
   display: inline;
 }
-// .section-heading {
-//   margin-bottom: .25em;
-// }
+.logo a {
+  color: #fff;
+  &:hover {
+    color: $action-color;
+  }
+}
