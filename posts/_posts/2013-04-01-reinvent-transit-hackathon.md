@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Reinvent Transit Hackathon"
 date: 2013-04-01 10:44
 description: Mission Focus to sponsor hackathon in Baltimore.

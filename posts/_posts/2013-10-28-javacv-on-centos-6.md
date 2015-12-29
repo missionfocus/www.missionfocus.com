@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "JavaCV on CentOS 6"
 date: 2013-10-28 08:41
 comments: false

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "How to Make an Icon Font"
 date: 2014-01-30 14:13
 description: Better than CSS sprite sheets by far.

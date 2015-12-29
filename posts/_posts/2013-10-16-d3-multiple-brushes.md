@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "D3: Multiple Brushes"
 date: 2013-10-16 10:50
 description: How to select multiple time ranges using D3 brushes.
