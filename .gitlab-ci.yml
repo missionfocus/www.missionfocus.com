@@ -16,6 +16,7 @@ test:
 pages:
   stage: deploy
   script:
+  - curl -sSL https://get.rvm.io | bash -s stable --ruby
   - gem install jekyll
   - jekyll build -d public
   artifacts:
