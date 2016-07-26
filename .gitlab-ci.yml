@@ -4,6 +4,7 @@ image: ruby:2.3
 test:
   stage: test
   script:
+  - curl -sSL https://get.rvm.io | bash -s stable --ruby
   - gem install jekyll
   - jekyll build -d test
   artifacts:
