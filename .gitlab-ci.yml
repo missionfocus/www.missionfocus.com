@@ -4,7 +4,7 @@ image: ruby:2.3
 test:
   stage: test
   script:
-  - sudo apt-get install ruby
+  - apt-get install ruby
   - gem install jekyll
   - jekyll build -d test
   artifacts:
@@ -16,7 +16,7 @@ test:
 pages:
   stage: deploy
   script:
-  - sudo apt-get install ruby
+  - apt-get install ruby
   - gem install jekyll
   - jekyll build -d public
   artifacts:
