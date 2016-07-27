@@ -4,7 +4,8 @@ image: ruby:2.3
 test:
   stage: test
   script:
-  - apt-get install ruby
+  - echo $(whoami)
+  - sudo apt-get install ruby
   - gem install jekyll
   - jekyll build -d test
   artifacts:
@@ -16,7 +17,8 @@ test:
 pages:
   stage: deploy
   script:
-  - apt-get install ruby
+  - echo $(whoami)
+  - sudo apt-get install ruby
   - gem install jekyll
   - jekyll build -d public
   artifacts:
