@@ -6,7 +6,8 @@ test:
   script:
   - echo $(whoami)
   - sudo apt-get install ruby
-  - gem install jekyll
+  - sudo apt-get install ruby-dev
+  - sudo gem install jekyll
   - jekyll build -d test
   artifacts:
     paths:
@@ -19,7 +20,8 @@ pages:
   script:
   - echo $(whoami)
   - sudo apt-get install ruby
-  - gem install jekyll
+  - sudo apt-get install ruby-dev
+  - sudo gem install jekyll
   - jekyll build -d public
   artifacts:
     paths:
