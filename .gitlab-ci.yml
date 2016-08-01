@@ -17,7 +17,7 @@ pages:
   stage: deploy
   script:
   - echo $(whoami)
-  - sudo gem install jekyll
+  - gem install jekyll
   - jekyll build -d public
   artifacts:
     paths:
