@@ -5,7 +5,7 @@ test:
   stage: test
   script:
   - echo $(whoami)
-  - sudo gem install jekyll
+  - gem install jekyll
   - jekyll build -d test
   artifacts:
     paths:
