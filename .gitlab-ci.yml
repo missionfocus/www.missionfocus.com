@@ -46,6 +46,7 @@ deploy:
   # WARNING: use only in docker container, if you use it with shell you will overwrite your user's ssh config
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  - mkdir -p ~/missionfocus.com
   - scp -r -p -P 49999 public/* maeick@linode.missionfocus.com:~/missionfocus.com
 
   - gem uninstall jekyll
