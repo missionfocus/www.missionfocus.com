@@ -8,7 +8,7 @@ test:
   - gem install jekyll
   - jekyll build -d test
   artifacts:
-    expire_in: 1 week
+    expire_in: 2 weeks
     paths:
     - test
   except:
@@ -21,7 +21,7 @@ pages:
   - gem install jekyll
   - jekyll build -d public
   artifacts:
-    expire_in: 1 week
+    expire_in: 2 weeks
     paths:
     - public
   only:
