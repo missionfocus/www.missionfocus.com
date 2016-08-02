@@ -1,10 +1,10 @@
 # Full project: https://gitlab.com/pages/jekyll
 image: ruby:2.3
 
-before_script
+before_script:
     - gem install jekyll
 
-after_script
+after_script:
     - gem uninstall jekyll
     
 stages:
