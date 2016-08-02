@@ -1,24 +1,39 @@
 # Full project: https://gitlab.com/pages/jekyll
 image: ruby:2.3
 
+before_script
+    - gem install jekyll
+
+after_script
+    - gem uninstall jekyll
+    
+stages:
+    - build
+    - test
+    - deploy
+
+
+    
+build:
+  stage: build
+  script:
+  - echo $(whoami)
+  - jekyll build -d test
+  except:
+  - master
+
 test:
   stage: test
   script:
   - echo $(whoami)
-  - gem install jekyll
   - jekyll build -d test
-  artifacts:
-    expire_in: 2 weeks
-    paths:
-    - test
   except:
   - master
 
-pages:
+deploy:
   stage: deploy
   script:
   - echo $(whoami)
-  - gem install jekyll
   - jekyll build -d public
   artifacts:
     expire_in: 2 weeks
