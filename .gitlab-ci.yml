@@ -47,7 +47,7 @@ deploy:
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
   - ping -c 4 linode.missionfocus.com
-  - scp -P 49999 public/* www@linode.missionfocus.com:~
+  - scp -P 49999 public/* maeick@linode.missionfocus.com:~
 
   - gem uninstall jekyll
   artifacts:
