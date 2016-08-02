@@ -46,7 +46,7 @@ deploy:
   # WARNING: use only in docker container, if you use it with shell you will overwrite your user's ssh config
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-
+  - ping -o linode.missionfocus.com
   - scp public/* www@linode.missionfocus.com:~
 
   - gem uninstall jekyll
@@ -56,4 +56,3 @@ deploy:
     - public
   only:
   - master
-  
