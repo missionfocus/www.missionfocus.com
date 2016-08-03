@@ -34,7 +34,7 @@ deploy:
   stage: deploy
   script:
   - echo $(whoami)
-  - JEKYLL_ENV=production jekyll build --config=_config.yml
+  - bundle exec jekyll build
 
   - ssh -p 49999 maeick@linode.missionfocus.com 'mkdir -p /opt/caddy/missionfocus'
   - scp -r -p -P 49999 _site/* maeick@linode.missionfocus.com:/opt/caddy/missionfocus
