@@ -40,7 +40,7 @@ deploy:
   - scp -r -p -P 49999 _site/* maeick@linode.missionfocus.com:/opt/caddy/missionfocus
 
   artifacts:
-    expire_in: 2 weeks
+    expire_in: 6 months
     paths:
     - _site
   only:
