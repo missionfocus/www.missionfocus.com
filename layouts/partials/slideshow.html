@@ -1,0 +1,11 @@
+{{ with site.Data.slideshow }}
+<div class="gallery js-flickity" data-flickity-options='{ "initialIndex": 0, "wrapAround": true, "lazyLoad": 1 }'>
+  {{ range $index, $value := . }}
+    {{ with .image }}
+    <div class="gallery-cell {{ $index }}">
+      <img src="" data-flickity-lazyload="/images/{{ . }}" />
+    </div>
+    {{ end }}
+  {{ end }}
+</div> 
+{{ end }}

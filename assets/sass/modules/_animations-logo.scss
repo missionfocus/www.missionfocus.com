@@ -1,0 +1,14 @@
+
+// #rectanglecurve {
+//   animation-duration: .25s;
+//     transition-timing-function: ease-in;
+//     animation-fill-mode: both;
+//   animation: hideshow 10s ease infinite;
+//   animation-name: fadeIn;
+//   display: none;
+//   fill: red;
+// }
+ 
+.logo-animation {
+  @include fadeInDown(); 
+}

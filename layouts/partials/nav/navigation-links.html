@@ -1,0 +1,9 @@
+{{ range site.Menus.main }}
+<li>
+  {{ $active := false }}
+  {{ if $.IsMenuCurrent "main" . }}
+    {{ $active = true }}
+  {{ end }}
+  <a class="{{ cond $active "active" ""}}" href="{{ .URL }}">{{ .Name }}</a>
+</li>
+{{ end }}

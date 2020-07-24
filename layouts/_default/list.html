@@ -1,0 +1,12 @@
+{{ define "main" }}
+  {{ partial "page-header.html" . }}
+  {{ range .Pages.ByDate.Reverse }}
+    <article class="hentry">
+      <h2>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      {{ .Content }}
+      <hr class="post-divider" />
+    </article>
+  {{ end }}
+{{ end }}

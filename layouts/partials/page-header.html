@@ -1,0 +1,17 @@
+{{/* Deal with page class */}}
+{{ $class := "page" }}
+{{ with .Params.slideshow }}
+  {{ $class = "product" }}
+{{ end }}
+<header class="{{ $class }}" 
+  style="{{ with .Params.image }}background: url('{{ . }}') no-repeat center center;background-size: cover;{{ end }}{{ with .Params.background_height }}min-height:{{ . }};{{ end }}">  
+  {{ if .Params.slideshow }}
+    {{ partial "slideshow.html" . }}
+  {{ else if eq .Title "Contact" }}
+    {{ partial "map-embeded.html" . }}
+  {{ else }}
+  <h1>
+    {{ .Title }}
+  </h1>
+  {{ end }}
+</header>

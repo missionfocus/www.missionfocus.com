@@ -1,0 +1,13 @@
+{{ $jquery := resources.Get "js/vendors/jquery/jquery.min.js" }}
+{{/* Remove the sourceMapURL statement */}}
+{{ $jquery = replace $jquery.Content `//# sourceMappingURL=jquery.min.map` "" | resources.FromString "jquery.min.js"}}
+{{ $jquery_scroll := resources.Get "js/vendors/jquery-scroll/index.min.js" }}
+{{ $flickity := resources.Get "js/vendors/flickity/flickity.pkgd.min.js" }}
+{{ $site := resources.Get "js/site-scripts.js" }}
+{{ $bundle := resources.Concat "scripts-contatenated" (slice $jquery $jquery_scroll $flickity $site) }}
+{{ with resources.Get "js/vendors/jquery/jquery.min.map" }}
+  {{ $store := .RelPermalink }}
+{{ end }}
+{{ with $bundle }}
+<script src="{{ .RelPermalink }}" async></script>
+{{ end }}
