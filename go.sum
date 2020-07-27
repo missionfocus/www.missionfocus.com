@@ -1,0 +1,16 @@
+github.com/jquery/jquery v0.0.0-20150428160304-7751e69b615c h1:dcfeYGV0eOyKPYrqSNB6b1V811un1HbfohIXHLSud0I=
+github.com/jquery/jquery v0.0.0-20150428160304-7751e69b615c/go.mod h1:awH0v5ImrD4lpSNYgzEFDJGCfWp3Y+4uYc2qFZDen9w=
+github.com/kswedberg/jquery-smooth-scroll v0.0.0-20150219131728-8cd0908c0a0c h1:NVrJJJ2Jt54H4SNfBBohX/QyWkEtEOONPHJbdk4euKU=
+github.com/kswedberg/jquery-smooth-scroll v0.0.0-20150219131728-8cd0908c0a0c/go.mod h1:nZQ/Ev9DdbaFozEAmm8r/qqt/P/rHsuoN0GDRfAunSc=
+github.com/lacroixdesign/node-bourbon v1.2.3 h1:luyJGZRAYFiO7p12KQ2MXEd+fqEugLdj/YacUOzztd0=
+github.com/lacroixdesign/node-bourbon v1.2.3/go.mod h1:Xzs8yJz/tq8stVboRBtCC2e0aJMim6k3s4Dd+yj2ns8=
+github.com/lacroixdesign/node-neat v1.4.2 h1:Pb7INRWPs8RkwYjjVVFUOCaVfk9CNErygQgCNatOtcs=
+github.com/lacroixdesign/node-neat v1.4.2/go.mod h1:xvVM+icH0cl2bC6ew3oF2ooH4gljVzdLCLNthZV4nEA=
+github.com/maxwellito/vivus v0.4.4 h1:ZQIWL9iMkjK+ejQHfgdSuJCA0qTKFZcsTQGMwvJleNM=
+github.com/maxwellito/vivus v0.4.4/go.mod h1:PRAQ7aCQILA7OZTquurBEKHLWy2YN5yuUfUZEoCbaow=
+github.com/metafizzy/flickity v2.2.1+incompatible h1:aExUn14XIqSDuCM3si0OamI4nc2ys32SKJ7p0+cW9BY=
+github.com/metafizzy/flickity v2.2.1+incompatible/go.mod h1:3af0f6bl0AoaouQGGT4vU92G1qFTxInk1DIHddXAtbY=
+github.com/theNewDynamic/hugo-module-tnd-seo v0.0.0-20200716194730-fc33cfb17b68 h1:NkoeMhCAwAmt9Vmhx/l2JSfv6VPHJz3aiffupB1Dod0=
+github.com/theNewDynamic/hugo-module-tnd-seo v0.0.0-20200716194730-fc33cfb17b68/go.mod h1:VY3Qvzif9T0Z0rjR85ufUQE1wrS/M5VZC9Dx1V8Vo8Y=
+github.com/theNewDynamic/hugo-module-tnd-tags v0.0.0-20200626200509-93dcb309850a h1:t5I67C9YSEr4MyzZ7IhcQvHmPSayjk6CpCxhjSI0hgo=
+github.com/theNewDynamic/hugo-module-tnd-tags v0.0.0-20200626200509-93dcb309850a/go.mod h1:fuXjv9Nbt2hi6oaOVAqhPRrS4hL9uYcwroo6V/Mw7Uk=

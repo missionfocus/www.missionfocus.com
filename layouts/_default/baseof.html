@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{{ partial "global/head" . }}
+{{ $class := "two-columns" }}
+{{ if eq .Layout "three-columns" }}
+  {{ $class = "three-columns" }}
+{{ else if .IsHome }}
+{{ $class = "home" }}
+{{ end }}
+<body class="{{ $class }}">
+  {{ if .IsHome }}
+    {{ block "main" . }}
+      
+    {{ end }}
+  {{ else }}
+    {{ partial "nav-sidebar-left.html" . }}
+    <div id="main" class="m-scene">
+      {{ block "main" . }}
+        
+      {{ end }}
+    </div>
+  {{ end }}
+  
+  {{ partial "global/scripts" . }}
+  {{ block "add_scripts" . }}
+    
+  {{ end }}
+</body>
+</html>
+ 

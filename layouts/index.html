@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div id="main" class="m-scene">
+  <main>
+    <div id="left"></div>
+    <div id="right"></div>  
+    <article class="logo-animation">
+      <img src="/images/logo-missionfocus.svg">
+    </article>
+    <header class="header-animation">
+      <h1 class="logo">
+        {{ site.Title }}
+      </h1>
+      <small>
+        <a href="#footer">100 Daingerfield &bull; Suite 400  &bull; Alexandria, VA, 22314 <i class="icon-ion-arrow-down-a"></i></a><br />
+        <a href="{{ site.Home.RelPermalink}}">www.missionfocus.com</a>
+      </small>
+      <nav>
+        <ul>
+        {{ partial "nav/navigation-links.html" . }}
+        </ul>
+      </nav>
+    </header>
+  </main>
+  <footer id="footer">
+    {{ partial "global/footer.html" . }}
+  </footer> 
+</div>
+{{ end }}
+{{ define "add_scripts" }}
+  {{ with resources.Get "js/vendors/vivus/vivus.min.js" }}
+  <script src="{{ .RelPermalink }}"></script>
+  <script type="text/javascript">
+    var left = new Vivus('left', {type: 'delayed', start: 'autostart', duration: 100, file: '/images-svg/left.svg'});
+    var right = new Vivus('right', {type: 'delayed', start: 'autostart', duration: 100, file: '/images-svg/right.svg'});
+    </script>
+  {{ end }}
+{{ end }}

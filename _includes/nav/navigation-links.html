@@ -1,5 +1,0 @@
-{% for links in site.data.navigation %}    
-  <li>
-    <a {% if page.url contains /links.slug/  %} class="active" {% endif %} href="{% if links.slug %}/{{links.slug}}/{% else %}/{% endif %}">{{ links.name }}</a>
-  </li>
-{% endfor %}

@@ -1,0 +1,26 @@
+imports:
+  - path: github.com/theNewDynamic/hugo-module-tnd-seo
+  - path: github.com/maxwellito/vivus
+    mounts:
+      - source: dist
+        target: assets/js/vendors/vivus
+  - path: github.com/jquery/jquery
+    mounts:
+      - source: dist
+        target: assets/js/vendors/jquery
+  - path: github.com/kswedberg/jquery-smooth-scroll
+    mounts:
+      - source: jquery.smooth-scroll.min.js
+        target: assets/js/vendors/jquery-scroll/index.min.js
+  - path: github.com/metafizzy/flickity
+    mounts:
+      - source: dist
+        target: assets/js/vendors/flickity
+  - path: github.com/lacroixdesign/node-bourbon
+    mounts:
+      - source: assets/stylesheets
+        target: assets/sass/bourbon
+  - path: github.com/lacroixdesign/node-neat
+    mounts:
+      - source: assets/stylesheets
+        target: assets/sass/neat

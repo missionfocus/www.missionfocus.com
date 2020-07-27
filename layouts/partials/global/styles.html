@@ -1,0 +1,10 @@
+{{ $includes := slice }}
+{{ $options := dict "targetPath" "screen.css"  }}
+{{ $style := resources.Get "sass/screen.scss" | toCSS $options}}
+{{ if partialCached "func/IsProduction" "IsProduction" }}
+  {{ $style = $style | minify | fingerprint }}
+{{ end }}
+
+{{ with $style }}
+<link href="{{ .RelPermalink }}" rel='stylesheet' type="text/css" />
+{{ end }}

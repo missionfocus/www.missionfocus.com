@@ -1,0 +1,34 @@
+//Base
+@import "tnd/normalize.scss",
+"bourbon/_bourbon.scss",
+"base/grid-settings",
+"neat/_neat.scss",
+"base/base", 
+"base/variables";
+
+// Vendor 
+@import "tnd/animate.scss"; 
+
+//  MODULES
+// list modules alphabetically unless they need to come before or after others, in which case, put them in a new @import...
+@import
+"modules/animations",
+"modules/mixins", 
+"modules/article",
+"modules/footer",
+"modules/utilities-accessibility",
+"modules/utilities-iframes",
+"base/utilities-mobile",
+"modules/two-columns",
+"modules/three-columns",
+"modules/nav",
+"modules/home",
+"modules/product-header"
+;
+.post-divider {
+  margin: 3em 0;
+}
+
+body *{
+  box-sizing: border-box;
+}

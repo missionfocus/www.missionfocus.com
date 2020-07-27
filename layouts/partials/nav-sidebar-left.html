@@ -1,0 +1,15 @@
+<nav class="side">
+  <a href="/"><img src="/images/mission-focus-logo.png" class="logo-animation"></a>
+  <div class="header-animation">
+    <h2 class="logo">
+      {{ with site.Home }}
+      <a href="{{ .RelPermalink }}">Mission Focus</a>
+      {{ end }}
+      
+    </h2>
+    <ul class="nav-sidebar">
+      {{ partial "nav/navigation-links.html" . }}
+    </ul>
+  </div>
+  <div id="left"></div> 
+</nav>

@@ -1,0 +1,20 @@
+@include media($medium) {
+  .header-animation {
+    @include fadeInUp(); 
+  }
+}
+@include media($large) {
+  .header-animation {
+    @include fadeInUp(); 
+  }
+}
+@include media($xlarge) {
+  .header-animation {
+    @include fadeInUp(); 
+  }
+}
+
+
+.logo-animation {
+  @include fadeInDown(); 
+}

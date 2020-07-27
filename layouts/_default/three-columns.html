@@ -1,0 +1,13 @@
+{{ define "main" }}
+  {{ partial "nav-sidebar-left" . }}
+  <main class="">
+    <section class="photo"{{ with .Params.image }} style="background: url('/images/{{ . }}') no-repeat center center;background-size: cover;"{{ end }}>
+    </section>
+    <div class="m-page scene_element scene_element--fadeinleft">
+      <article class="hentry">
+        {{ .Content }}
+      </article>
+    </div>
+  </main>
+{{ end }}
+
