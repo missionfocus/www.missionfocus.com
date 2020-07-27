@@ -27,9 +27,3 @@ command = "hugo --minify -b $DEPLOY_URL"
 
 [context.branch-deploy.environment]
 HUGO_VERSION = "0.73.0"
-
-[context.master]
-command = "hugo --minify -b $DEPLOY_URL"
-
-[context.master.environment]
-HUGO_VERSION = "0.73.0"
