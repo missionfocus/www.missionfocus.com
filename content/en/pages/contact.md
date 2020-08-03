@@ -1,11 +1,12 @@
 ---
 title: Contact
-background_height: "420px"
+background_height: 420px
 image: /images/map.png
 menu:
   main:
     name: Contact/location
     weight: 40
+layout: 'default'
 ---
 [**Click here to see the map on Google Maps**](https://www.google.com/maps/place/100+Daingerfield+Rd,+Alexandria,+VA+22314/@38.8066022,-77.0575901,14z/data=!4m2!3m1!1s0x89b7b1aa83160eab:0xdfef005094df481)
 

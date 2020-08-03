@@ -1,0 +1,4 @@
+label: "Featured Image"
+name: "image"
+widget: "image"
+required: false

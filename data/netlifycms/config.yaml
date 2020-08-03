@@ -1,0 +1,13 @@
+backend:
+  name: git-gateway
+media_folder: static/images
+public_folder: /images
+local_backend: true
+publish_mode: editorial_workflow
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+collections:
+- import collection pages
+- import collection posts

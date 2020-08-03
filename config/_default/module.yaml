@@ -1,5 +1,6 @@
 imports:
   - path: github.com/theNewDynamic/hugo-module-tnd-seo
+  - path: github.com/theNewDynamic/hugo-module-tnd-netlifycms
   - path: github.com/maxwellito/vivus
     mounts:
       - source: dist

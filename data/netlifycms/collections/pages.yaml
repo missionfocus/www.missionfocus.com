@@ -1,0 +1,15 @@
+name: "pages"
+label: "Pages"
+label_singular: "Page"
+folder: "content/en/pages"
+create: true
+sortableFields: ['title']
+preview_path: /{{slug}}
+fields:
+  - import field title
+  - import field date
+  - import field layout
+  - import field image
+  - import field description
+  - import field body
+  - import field seo

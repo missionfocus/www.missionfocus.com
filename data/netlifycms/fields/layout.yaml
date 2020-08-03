@@ -1,0 +1,8 @@
+label: Layout
+name: layout
+widget: select
+required: false
+options:
+  - default
+  - three-columns
+default: default

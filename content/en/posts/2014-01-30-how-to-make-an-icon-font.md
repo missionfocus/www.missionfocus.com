@@ -2,7 +2,7 @@
 title: "How to Make an Icon Font"
 date: 2014-01-30
 description: Better than CSS sprite sheets by far.
-published: false
+draft: true
 ---
 
 If you've ever had to deal with sprite sheet you'll understand why icon fonts are infinitely preferable - no need to constantly fiddle with ```background-position```s. Icon fonts also give us all the benefits of fonts - infinitely scaleable, cross-browser compatibility, ability to easy swap out colors - without having to deal with the pitfalls of SVGs or images (cross-browser compabiity issues and dozens of small files).

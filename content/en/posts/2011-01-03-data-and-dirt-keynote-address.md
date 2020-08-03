@@ -3,7 +3,7 @@ category: News
 title: "Data and Dirt keynote address"
 date: 2011-01-03
 description: Talk from Dr. Yoakum-Stover on ULS Systems at Information Managers.
-published: false
+draft: true
 ---
 Dr. Yoakum-Stover delivered the keynote address at the Information Managers 2010 Executive Symposium.  In the first part of the address, Dr. Stover talks about ULS systems.
 
