@@ -3,7 +3,6 @@ title: "JavaCV on CentOS 6"
 date: 2013-10-28
 comments: false
 description: How to <em>not</em> require a system level install of the OpenCV libraries.
-published: true
 ---
 
 [JavaCV](https://code.google.com/p/javacv/) is a "Java interface to

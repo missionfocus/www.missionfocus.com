@@ -1,0 +1,13 @@
+name: "posts"
+label: "Posts"
+label_singular: "Post"
+folder: "content/en/posts"
+create: true
+sortableFields: ['title']
+preview_path: updates/{{slug}}
+fields:
+  - import field title
+  - import field date
+  - import field description
+  - import field body
+

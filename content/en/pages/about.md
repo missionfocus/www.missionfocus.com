@@ -1,7 +1,8 @@
 ---
-title: "About Mission Focus"
-image: office.jpg
+title: About Mission Focus
+date: 2020-08-03T16:20:15.360Z
 layout: three-columns
+image: office.jpg
 menu:
   main:
     name: About

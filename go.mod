@@ -9,6 +9,7 @@ require (
 	github.com/lacroixdesign/node-neat v1.4.2 // indirect
 	github.com/maxwellito/vivus v0.4.4 // indirect
 	github.com/metafizzy/flickity v2.2.1+incompatible // indirect
+	github.com/theNewDynamic/hugo-module-tnd-netlifycms v0.1.5 // indirect
 	github.com/theNewDynamic/hugo-module-tnd-seo v0.0.0-20200716194730-fc33cfb17b68 // indirect
 	github.com/theNewDynamic/hugo-module-tnd-tags v0.0.0-20200626200509-93dcb309850a // indirect
 )

@@ -10,6 +10,8 @@ github.com/maxwellito/vivus v0.4.4 h1:ZQIWL9iMkjK+ejQHfgdSuJCA0qTKFZcsTQGMwvJleN
 github.com/maxwellito/vivus v0.4.4/go.mod h1:PRAQ7aCQILA7OZTquurBEKHLWy2YN5yuUfUZEoCbaow=
 github.com/metafizzy/flickity v2.2.1+incompatible h1:aExUn14XIqSDuCM3si0OamI4nc2ys32SKJ7p0+cW9BY=
 github.com/metafizzy/flickity v2.2.1+incompatible/go.mod h1:3af0f6bl0AoaouQGGT4vU92G1qFTxInk1DIHddXAtbY=
+github.com/theNewDynamic/hugo-module-tnd-netlifycms v0.1.5 h1:z/KEYumKfCrVgn58vOCFI+aW7mypprpgtLkubjpUbC0=
+github.com/theNewDynamic/hugo-module-tnd-netlifycms v0.1.5/go.mod h1:nq9tIR0Xpx2W2mSQHfJya2OvAfgYOMveqrllijA27vo=
 github.com/theNewDynamic/hugo-module-tnd-seo v0.0.0-20200716194730-fc33cfb17b68 h1:NkoeMhCAwAmt9Vmhx/l2JSfv6VPHJz3aiffupB1Dod0=
 github.com/theNewDynamic/hugo-module-tnd-seo v0.0.0-20200716194730-fc33cfb17b68/go.mod h1:VY3Qvzif9T0Z0rjR85ufUQE1wrS/M5VZC9Dx1V8Vo8Y=
 github.com/theNewDynamic/hugo-module-tnd-tags v0.0.0-20200626200509-93dcb309850a h1:t5I67C9YSEr4MyzZ7IhcQvHmPSayjk6CpCxhjSI0hgo=
